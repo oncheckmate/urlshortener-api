@@ -1,0 +1,16 @@
+Redirect to URL:
+    /api/url/{shortenCode}
+	method: GET,
+	Res: 301
+
+Get URL Data:
+	/api/url/info/{shortenCode}
+	method: GET,
+	Res: 200 {url}
+
+Create URL:
+    /api/url
+	method: POST,
+	body: url,
+        (OPTIONAL OPTIONS) unique: ? (BOOLEAN)
+    Res: 201 {url}
